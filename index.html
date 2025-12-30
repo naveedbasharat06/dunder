@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Dunder | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-['Poppins'] m-0 p-0 overflow-x-hidden bg-white text-black antialiased md:overflow-hidden">
+
+    <div id="cursor" 
+         class="fixed top-0 left-0 w-10 h-10 z-[9999] opacity-0 text-black pointer-events-none hidden md:flex items-center justify-center -translate-x-1/2 -translate-y-1/2 transition-opacity duration-200">
+        <i id="cursor-icon" class="fa-solid fa-chevron-right text-[20px]"></i>
+    </div>
+
+    <main class="relative w-screen h-screen">
+        
+        <header id="main-header" 
+                class="fixed top-0 left-0 z-[1000] w-full h-[80px] md:h-[100px] px-6 md:px-10 flex justify-between items-center bg-transparent pointer-events-auto box-border">
+            
+            <div id="logo" class="text-[20px] md:text-[25px] font-semibold tracking-tighter">
+                <a href="/" class="underline underline-offset-4 decoration-[1px]">Dunder</a>
+            </div>
+
+            <nav>
+                <ul class="flex items-center gap-[15px] md:gap-[25px] list-none p-0 m-0">
+                    <li>
+                        <a href="/about" class="relative text-[13px] md:text-[15px] uppercase tracking-[0.15em] font-normal 
+                           after:content-[''] after:absolute after:w-full after:h-[1px] after:bottom-[-3px] after:left-0 after:bg-current 
+                           after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 
+                           hover:after:scale-x-100 hover:after:origin-bottom-left">About</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="relative text-[13px] md:text-[15px] uppercase tracking-[0.15em] font-normal 
+                           after:content-[''] after:absolute after:w-full after:h-[1px] after:bottom-[-3px] after:left-0 after:bg-current 
+                           after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 
+                           hover:after:scale-x-100 hover:after:origin-bottom-left">Contact</a>
+                    </li>
+                    <li>
+         <a href="https://www.instagram.com/dunder.studios/"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="flex items-center"
+   aria-label="Follow us on Instagram">
+    <i class="fa-brands fa-instagram text-[20px] md:text-[24px]"></i>
+</a>
+
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="slider" class="relative w-full h-full z-10 overflow-hidden md:cursor-none">
+            
+            <div class="slide absolute inset-0 w-full h-full flex items-center justify-center gap-[60px] opacity-0 z-10 pointer-events-none transition-opacity duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] active:opacity-100 active:z-20 active:pointer-events-auto active:flex">
+                <div class="h-[60vh] w-[85vw] md:h-[80vh] md:w-[48%] mt-20 md:mt-24">
+                    <img src="assets/images/Singular_perfume-multi.jpg" 
+     alt="Singular Perfume multi-colored bottle" 
+     class="w-full h-full object-cover">
+
+                </div>
+                <div class="hidden md:block h-[60vh] w-[85vw] md:h-[80vh] md:w-[48%] mt-20 md:mt-24">
+                    <img src="assets/images/Singular_perfume-single.jpg" 
+     alt="Bottle of Singular Perfume" 
+     class="w-full h-full object-cover">
+
+                </div>
+            </div>
+
+            <div class="slide absolute inset-0 w-full h-full flex items-center justify-center gap-[20px] opacity-0 z-10 pointer-events-none transition-opacity duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] active:opacity-100 active:z-20 active:pointer-events-auto active:flex">
+                <div class="slide-inner h-[60vh] w-[85vw] md:h-[80vh] md:w-[31%] mt-20 md:mt-24">
+                    <img src="assets/images/BB-CREATIVE_4075.jpg" 
+     alt="Creative BB product shot" 
+     class="w-full h-full object-cover">
+
+                </div>
+               <div class="hidden md:block slide-inner h-[80vh] w-[31%] mt-24">
+  <img src="assets/images/BB-CREATIVE_4105.jpg" 
+       alt="Creative BB product shot from 4105 collection" 
+       class="w-full h-full object-cover">
+</div>
+
+                <div class="hidden md:block slide-inner h-[80vh] w-[31%] mt-24">
+  <img src="assets/images/BB-CREATIVE_RED_3806.jpg" 
+       alt="BB Creative Red product from 3806 collection" 
+       class="w-full h-full object-cover">
+</div>
+
+            </div>
+
+            <div class="slide absolute inset-0 w-full h-full flex opacity-0 z-10 pointer-events-none transition-opacity duration-[1200ms] ease-[cubic-bezier(0.4,0,0.2,1)] active:opacity-100 active:z-20 active:pointer-events-auto active:flex">
+                <div class="flex-1 h-full">
+                   <img src="assets/images/HOPE-SS24-43279856-CRISS-JEANS-PALE-BLUE-VINTAGE-Female_2033.jpg" 
+     alt="HOPE SS24 Criss Jeans in pale blue vintage for women" 
+     class="w-full h-full object-cover">
+
+                </div>
+                <div class="hidden md:block flex-1 h-full">
+                    <img src="assets/images/HOPE-SS24-43441099-SECRET-TOP-DOVE-GREY_0204.jpg" 
+     alt="HOPE SS24 Secret Top in dove grey" 
+     class="w-full h-full object-cover">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
